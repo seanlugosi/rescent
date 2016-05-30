@@ -1,0 +1,113 @@
+{% extends('main.html') %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<body>
+    <link rel="stylesheet" href="static/upload.css" />
+
+<div class='container-fluid' style="">
+<div class="panel panel-info ">
+    <div class="panel-heading">
+        New mapping upload
+    </div>
+    <div class="panel-body">
+            </div class="form-input">
+            <form>
+                Client ID:<br>
+                <input type="text" name="Client Id">
+                GA Profile ID:<br>
+                <input type="text" name="Profile Id(s)">
+                Goal Names:<br>
+                <input type="text" name="Goal Names">
+            </form>
+        <form role="form" action="" method=post enctype=multipart/form-data>
+			<div class="form-group">
+			    <label>File input</label>
+			    <input type="file" name='file'>
+			</div>
+			<div class="form-group">
+                
+            
+               <div class="shoppingradio">
+                <label>Are they using Shopping Campaigns?</label>
+                    <label>
+                        <input type="radio" name="optionsRadiosShop" id="optionsRadios3" value="Yes" checked="">Yes
+                    </label>
+                </div>
+                <div class="shoppingradio">
+                    <label>
+                        <input type="radio" name="optionsRadiosShop" id="optionsRadios4" value="No" checked="">No
+                    </label>
+                </div>
+            </div>
+            <div class ="form-group">
+	            <label>URL Type (for Manual Tagging)</label>
+	            <div class="radio">
+	                <label>
+	                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="new" checked="">Recent (device appended) : utm_content=[distribution][uniq_id]_d[device]|pcrid|[creative_id]|pkw|[keyword_text]|pmt|[matchtype]
+	                </label>
+	            </div>
+	            <div class="radio">
+	                <label>
+	                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="classic">Old school (device on its own) : utm_content=[distribution][uniq_id]|pcrid|[creative_id]|pkw|[keyword_text]|pmt|[matchtype]|pdv|[device]
+	                </label>
+	            </div>
+	        </div>
+	        <button type="submit" class="btn btn-default">Submit Button</button>
+		</form>
+	</div>
+    <div class="panel-footer">
+    </div>
+    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                           How to
+                        </div>
+                        <div class="panel-body">
+                        <div class="panel-body">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#Instructions" aria-expanded="false" class="">Instructions</a>
+                                        </h4>
+                                    </div>
+                                    <div id="Instructions" class="panel-collapse collapse in" aria-expanded="false">
+                                        <div class="panel-body bg-info">
+                                            <p>Head over to <a href='https://docs.google.com/a/marinsoftware.com/forms/d/1v1J8yUceyJJ1aBCbxP0WV2Hr0xTpPW7r_yaQvQvroKE/edit?usp=drive_web'> the original source form </a> (<strong class='text-danger'>Do no send the original file!</strong>), make a copy and send the copy submission link to your customer.</p>
+                                            <p>When the form has been filled, in the responses tab, select Download responses and updload the file above and select the right url format</p>
+                                            <p> You'll get all the mappings pre-generated, ready to copy and paste in csapp, grouped by similar conversion structures (Less mapings to create)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#Conversion_types" class="collapsed" aria-expanded="false">Conversion types</a>
+                                        </h4>
+                                    </div>
+                                    <div id="Conversion_types" class="panel-collapse collapse" aria-expanded="false">
+                                        <div class="panel-body">
+                         				<p class="bg-info">Conversion types are using the goal name. IE, Goal2 will map to conversion_id goal2, Ecommerce to ecommerce</p>
+                         				
+                         				<p class="bg-danger">The above could create issues if 2 different profiles map to the same Goal ID but the goal is different between profile #1 and profile #3.IE: <blockquote class="bg-danger">Profile 1234 use Goal3 (New lead) and profile 4567 use Goal3 (Online sale). Either they'll get grouped under the same mapping (if their structure is identical), or at the very least under the same conversion_id</blockquote></p>
+
+                         				<p class="bg-warning">Also remember that GA conversion types are Conv date only</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                        <div class="panel-footer">
+                    </div>
+	</div>
+
+</div>
+{% endblock %}
+<p><a href="/">Back to Support Page</a><br>
+<a href="http://labs-lv-2.prod.marinsw.net:3000/qa/tracker/">QA Tracker Tool</a><br>
+<a href="http://opsportal.marinsw.net">Ops Portal</a></p><br>
+</html>

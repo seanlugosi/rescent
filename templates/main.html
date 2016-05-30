@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-theme.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='sb-admin-2.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='jquery-2.2.2.min.js') }}" ></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='bootstrap.min.js') }}" ></script>
+    </head>
+<body>
+        <nav class="navbar navbar-default">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="{{ url_for('gamap') }}"> New upload<span class="sr-only">(current)</span></a></li>
+            </ul>
+        </nav>
+
+
+        <div id="wrapper" style="width:960px; margin:0 auto">
+        {% block content %}
+            <ul class="nav nav-pills" role="tablist">
+            {% for profile in profileIDs %}
+                <li role="presentation" class="{{ 'active' if loop.index0==0    }}"><a href="#{{ profile }}" data-toggle="tab"> {{ profile }} </a></li>
+            {% endfor %}
+            </ul>
+            <div class="tab-content">
+            {% for mapping in mappings %}
+                <div class="tab-pane {{ 'active' if loop.index0==0  }}" id="{{ mapping['Auto-tagging']['profileIDs'] }}"> 
+                {% for key,value in mapping.iteritems() %}
+                    <div class="panel panel-green ">
+                        <div class="panel-heading">Mapping type : {{ key }}</div>
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                                <li>Mapping name : {{ value.name }}</li>
+                                <li>Conversion types : {{ value.conversion_types }}</li>
+                            </ul>
+                            <h4> Mapping :</h4>
+                            <blockquote>{{value.mapping|safe}}</blockquote>
+                        </div>
+                        <div class="panel-footer"></div>
+                    </div>
+                {% endfor %}
+                </div>
+            {% endfor %}
+            </div>
+        {% endblock %}
+        </div>
+</body>
+</html>

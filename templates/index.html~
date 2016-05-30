@@ -1,0 +1,244 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marin Resolution Centre</title>
+    <link rel="stylesheet" href="static/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+      <div class="row">
+        <div class="large-12 columns">
+     
+         
+          <div class="row">
+            <div class="large-12 columns">
+     
+              <nav class="top-bar" data-topbar>
+                <ul class="title-area">
+                   
+                  <li class="name">
+                    <h1>
+                      <a href="#">
+                        Marin Resolution Centre
+                      </a>
+                    </h1>
+                  </li>
+                  <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+                </ul>
+             
+                <section class="top-bar-section">
+                   
+                  <ul class="right">
+                    <li class="divider"></li>
+                    <li class="has-dropdown">
+                      <a href="#">Diagnostics</a>
+                      <ul class="dropdown">
+                        <li><label>Section Name</label></li>
+                        <li class="has-dropdown">
+                          <a href="#" class="">Has Dropdown, Level 1</a>
+                          <ul class="dropdown">
+                            <li><a href="#">Dropdown Options</a></li>
+                            <li><a href="#">Dropdown Options</a></li>
+                            <li><a href="#">Level 2</a></li>
+                            <li><a href="#">Subdropdown Option</a></li>
+                            <li><a href="#">Subdropdown Option</a></li>
+                            <li><a href="#">Subdropdown Option</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Dropdown Option</a></li>
+                        <li><a href="#">Dropdown Option</a></li>
+                        <li class="divider"></li>
+                        <li><label>Section Name</label></li>
+                        <li><a href="#">Dropdown Option</a></li>
+                        <li><a href="#">Dropdown Option</a></li>
+                        <li><a href="#">Dropdown Option</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">See all →</a></li>
+                      </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#">Training</a></li>
+                    <li class="divider"></li>
+                    <li class="has-dropdown">
+                      <a href="#">Actions</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Bulk Upload Keywords</a></li>
+                        <li><a href="#">Upload Revenue</a></li>
+                        <li><a href="#">Kick Off Bids</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">See all →</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </section>
+              </nav>
+               
+            </div>
+          </div>
+     
+         
+     
+          <div class="row">
+     
+       
+     
+            <div class="large-4 small-12 columns">
+     
+              <img src="http://fe-blog-prod.s3-us-west-2.amazonaws.com/wp-content/uploads/2014/02/marinsoftware.jpg">
+     
+              <div class="hide-for-small panel">
+                <h3>Marin Software</h3>
+                <h5 class="subheader">Leader in Search, Display and Content. We're here to help. Please navigate the menus to the right so we can address your query in the best manner.
+                </h5>
+              </div>
+     
+              <a href="#">
+              <div class="panel callout radius">
+                <h6>Your Account Diagnostics:</h6>
+		<img src="https://i.imgur.com/oNtJNeS.jpg" height="60" width="50">
+		<br>
+		<strong>Your account Manager is Vagentech</strong>
+		<p>ID:4400</p>
+		<p>Attributed Rows 99%</>
+		<p>You use Google Analytics, Marin Tracker</p>
+		<p>253 Keyword URLs do not have UTM parameters</p>
+              </div>
+              </a>
+     
+            </div>
+     
+         
+     
+     
+         
+     
+            <div class="large-8 columns">
+              <div class="row">
+     
+                <div class="large-4 small-6 columns">
+                  <img src="/static/nav-campaign_management.png">
+     
+                  <div class="panel">
+                    <h5>Campaign Mgmt</h5>
+                    <h6 class="subheader">Errors, Bulk Uploads</h6>
+                  </div>
+                </div>
+     
+                <div class="large-4 small-6 columns">
+                  <img src="/static/nav-bidding.png">
+     
+                  <div class="panel">
+                    <h5>Bidding</h5>
+                    <h6 class="subheader">Kick off, Calculation</h6>
+                  </div>
+                </div>
+     
+                <div class="large-4 small-6 columns">
+                  <img src="/static/nav-marin_search.png">
+     
+                  <div class="panel">
+                    <h5>Marin Search</h5>
+                    <h6 class="subheader">Search Campaigns</h6>
+                  </div>
+                </div>
+     
+                <div class="large-4 small-6 columns">
+                  <img src="/static/nav-revenue_and_conversions.png">
+     
+                  <div class="panel">
+                    <h5>Data Issues</h5>
+                    <h6 class="subheader">Discrepancies, Publisher Data</h6>
+                  </div>
+                </div>
+     
+                <div class="large-4 small-6 columns">
+                  <img src="/static/nav-your_marin_account.png">
+     
+                  <div class="panel">
+                    <h5>Account</h5>
+                    <h6 class="subheader">Access, Credentials, Users</h6>
+                  </div>
+                </div>
+     
+                <div class="large-4 small-6 columns">
+                  <img src="/static/nav-reporting.png">
+     
+                  <div class="panel">
+                    <h5>Reporting</h5>
+                    <h6 class="subheader">Inconsistencies, Requests</h6>
+                  </div>
+                </div>
+              </div>
+     
+         
+     
+     
+         
+              <div class="row">
+                <div class="large-12 columns">
+                  <div class="panel">
+                    <div class="row">
+     
+                      <div class="large-2 small-6 columns">
+			 <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Achtung.png" height="50" width="50">
+                      </div>
+     
+                      <div class="large-10 small-6 columns">
+			<strong>Alerts<hr/></strong>
+			<strong>Your account</strong>
+     			<p>Incident - Marin Tracker Revenue files delayed</p>
+			<strong>All accounts</strong>
+			<p>Incident - View Builder layout misaligned</p>
+			<strong><u>Did you know?</u></strong>
+			<br>
+			Product Groups need UTM parameters in their URL for GA to track!
+			<br>
+			<strong><u>Open Cases:</u></strong>
+			<p>00212121: Get Moar Data</p>
+                      </div>
+     
+                    </div>
+                  </div>
+                </div>
+     
+         
+     
+              </div>
+            </div>
+          </div>
+     
+     
+         
+     
+          <footer class="row">
+            <div class="large-12 columns"><hr/>
+              <div class="row">
+     
+                <div class="large-6 columns">
+                  <p>© Copyright Marin Software</p>
+                </div>
+     
+                <div class="large-6 columns">
+                  <ul class="inline-list right">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                  </ul>
+                </div>
+     
+              </div>
+            </div>
+          </footer>
+     
+         
+     
+        </div>
+      </div>
+    
+  </body>
+</html>
+

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Revenue Debugging</title>
+<link href="static/decisionTree.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="static/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="debug"></div>
+<ul class="tree">
+  <li id="branch-1">
+    <h1><font face="Helvetica" >Revenue</h1></font>
+
+
+    <ul>
+        <li><a href="#branch-1-1">Marin Tracker</a></li>
+        <li><a href="#branch-1-2">Google Analytics</a></li>
+    </ul>
+  </li>
+  <li id="branch-1-1">
+    <h2>Marin Tracker</h2>
+    <ul>
+        <li><a href="#branch-1-1-1">Redirect</a></li>
+        <li><a href="#branch-1-1-2">Pixel</a></li>
+    </ul>
+  </li>
+  <li id="branch-1-2">
+    <h2>Google Analytics</h2>
+    <ul>
+        <li><a href="#branch-1-2-1">Manual Tagging</a></li>
+        <li><a href="#branch-1-2-2">Auto Tagging</a></li>
+        <li><a href="#branch-1-2-3">No Integration Setup</a></li>
+    </ul>
+  </li>
+  <li id="branch-1-1-1">
+    <h2>Redirect</h2>
+    <ul>
+        <li><a href="#branch-1-1-1-1">Conversions</a></li>
+        <li><a href="#branch-1-1-1-2">Revenue</a></li>
+        <li><a href="#branch-1-1-2-2">URL Tracking</a></li>
+
+    </ul>
+  </li>
+  <li id="branch-1-1-2">
+    <h2>Pixel</h2>
+    <ul>
+        <li><a href="#branch-1-1-1-1">Conversions</a></li>
+        <li><a href="#branch-1-1-1-2">Revenue</a></li>
+        <li><a href="#branch-1-1-2-2">URL Tracking</a></li>
+    </ul>
+  </li>
+  <li id="branch-1-2-1">
+    <h2>Manual Tagging</h2>
+    <ul>
+        <li><a href="#branch-1-2-1-1">Discrepancy</a></li>
+        <li><a href="#branch-1-2-1-2">URL Issues</a></li>
+    </ul>
+  </li>
+  <li id="branch-1-2-2">
+    <h2>Auto Tagging</h2>
+    <ul>
+        <li><a href="#branch-1-2-2-1">Discrepancy</a></li>
+        <li><a href="#branch-1-2-2-2">Mapping</a></li>
+    </ul>
+  </li>
+  <li id="branch-1-1-2-2">
+    <h3>Proposed Next Steps:</h3>
+    <p>Where is their Tracking Template set up? Is the Keyword using that Tracking Temple?</p>
+    <p>Are they using Custom Parameters and Dimensions? Are those populated? When were they created?</p>
+    <p>Is Google/Bing serving the same URL we're showing in Destination URL?</p>
+
+  </li>
+  <li id="branch-1-1-1-2">
+    <h3>Proposed Next Steps:</h3>
+    <p>Do they have less/more conversions in Adwords/Bing?</p>
+    <p>Have you confirmed they have a confirmation page pixel on every one of their conversion pages?</p>
+    <p>Have they seen a corresponding drop in Clicks for the same date?</p>
+    <p>Useful scripts include: tr.mkwidcount CID MKWID, tr.conversiontypescount CID
+  </li>
+  <li id="branch-1-1-1-1">
+    <h3>Proposed Next Steps:</h3>
+    <p>The likelihood is that a Confirmation Page pixel has not been embedded on all website pages. Check that conversion type pixels are also embedded on any new pages recently created by the user</p>
+  </li>
+
+</ul>
+<ul class="tree">
+  <li id="branch-2">
+    <h1><font face="Helvetica">Bulk Uploads</h1></font>
+
+
+    <ul>
+        <li><a href="#branch-2-1">Bing</a></li>
+        <li><a href="#branch-2-2">Google</a></li>
+    </ul>
+  </li>
+  <li id="branch-2-1">
+    <h2>Bing</h2>
+    <ul>
+        <li><a href="#branch-2-1-1">Keywords</a></li>
+        <li><a href="#branch-2-1-2">Creatives</a></li>
+    </ul>
+  </li>
+  <li id="branch-2-2">
+    <h2>Google</h2>
+    <ul>
+        <li><a href="#branch-2-2-1">Keywords</a></li>
+        <li><a href="#branch-2-2-2">Creatives</a></li>
+        <li><a href="#branch-2-2-3">Shopping</a></li>
+    </ul>
+  </li>
+  <li id="branch-2-1-1">
+    <h2>Keywords</h2>
+    <ul>
+        <li><a href="#branch-2-1-1-1">Errors</a></li>
+        <li><a href="#branch-2-1-1-2">Advice</a></li>
+        <li><a href="#branch-2-1-2-2">Other</a></li>
+
+    </ul>
+  </li>
+  <li id="branch-2-1-2">
+    <h2>Creatives</h2>
+    <ul>
+        <li><a href="#branch-2-1-1-1">Errors</a></li>
+        <li><a href="#branch-2-1-1-2">Advice</a></li>
+        <li><a href="#branch-2-1-2-2">Other</a></li>
+    </ul>
+  </li>
+  <li id="branch-2-2-1">
+    <h2>Keywords</h2>
+    <ul>
+        <li><a href="#branch-2-2-1-1">Errors</a></li>
+        <li><a href="#branch-2-2-1-2">Advice</a></li>
+    </ul>
+  </li>
+  <li id="branch-2-2-2">
+    <h2>Creatives</h2>
+    <ul>
+        <li><a href="#branch-2-1-1-1">Errors</a></li>
+        <li><a href="#branch-2-1-1-2">Advice</a></li>
+        <li><a href="#branch-2-1-2-2">Other</a></li>
+    </ul>
+  </li>
+  <li id="branch-2-2-3">
+    <h2>Shopping</h2>
+    <ul>
+        <li><a href="#branch-2-2-2-1">Tracking/URLs</a></li>
+        <li><a href="#branch-2-2-2-2">Errors</a></li>
+    </ul>
+  </li>
+  <li id="branch-2-1-1-2">
+    <h3>Proposed Next Steps:</h3>
+    <p>Some Advice</p>
+  </li>
+  <li id="branch-2-1-1-1">
+    <h3>Proposed Next Steps:</h3>
+    <p>Some advice</p>
+  </li>
+  <li id="branch-2-1-2-2">
+    <h3>Proposed Next Steps:</h3>
+    <p>Some Advice</p>
+  </li>
+  <li id="branch-2-1-2-1">
+    <h3>Proposed Next Steps:</h3>
+    <p>Some advice</p>
+  </li>
+  <li id="branch-2-2-1-2">
+    <h3>Proposed Next Steps:</h3>
+    <p>Some Advice</p>
+  </li>
+  <li id="branch-2-2-1-1">
+    <h3>Proposed Next Steps:</h3>
+    <p>Some advice</p>
+  </li>
+  <li id="branch-2-2-2-2">
+    <h3>Proposed Next Steps:</h3>
+    <p>Some Advice</p>
+  </li>
+  <li id="branch-2-2-2-1">
+    <h3>Proposed Next Steps:</h3>
+    <p>Some advice</p>
+  </li>
+  
+</ul>
+<ul class="tree">
+  <li id="branch-3">
+    <h1><font face="Helvetica">URL Builder</h1></font>
+
+
+    <ul>
+        <li><a href="#branch-3-1">Other Publisher</a></li>
+        <li><a href="#branch-3-2">Google</a></li>
+    </ul>
+  </li>
+  <li id="branch-3-1">
+    <h2>Other</h2>
+    <ul>
+        <li><a href="#branch-2-1-1">Rebuild URLs</a></li>
+        <li><a href="#branch-3-1-2">Other</a></li>
+    </ul>
+  </li>
+  <li id="branch-3-2">
+    <h2>Google</h2>
+    <ul>
+        <li><a href="#branch-3-2-1">Tracking Template</a></li>
+        <li><a href="#branch-3-2-2">Custom Parameters</a></li>
+        <li><a href="#branch-3-2-3">Marin Macros</a></li>
+    </ul>
+  </li>
+  <li id="branch-3-1-1">
+    <h2>Rebuild URLs</h2>
+    <ul>
+        <li><a href="#branch-3-1-1-1">Errors</a></li>
+        <li><a href="#branch-3-1-1-2">Advice</a></li>
+        <li><a href="#branch-3-1-2-2">Other</a></li>
+
+    </ul>
+  </li>
+  <li id="branch-3-1-2">
+    <h2>Other</h2>
+    <ul>
+        <li><a href="#branch-3-1-1-1">Errors</a></li>
+        <li><a href="#branch-3-1-1-2">Advice</a></li>
+        <li><a href="#branch-3-1-2-2">Other</a></li>
+    </ul>
+  </li>
+  <li id="branch-3-2-1">
+    <h2>Tracking Template</h2>
+    <ul>
+        <li><a href="#branch-3-2-1-1">Not populated</a></li>
+        <li><a href="#branch-3-2-1-2">Create new</a></li>
+    </ul>
+  </li>
+  <li id="branch-3-2-2">
+    <h2>Custom Parameters</h2>
+    <ul>
+        <li><a href="#branch-3-2-1-1">Not populated in URL</a></li>
+        <li><a href="#branch-3-2-1-2">Need to create new</a></li>
+        <li><a href="#branch-3-2-2-2">How to use</a></li>
+    </ul>
+  </li>
+  <li id="branch-3-2-3">
+    <h2>Marin Macros</h2>
+      <ul>
+        <li><a href="#branch-3-2-3-1">Not populated in URL</a></li>
+        <li><a href="#branch-3-2-3-2">Need to create new</a></li>
+        <li><a href="#branch-3-2-3-2">How to use</a></li>
+    </ul>
+  </li>
+  <li id="branch-3-1-1-2">
+    <h3>Proposed Next Steps:</h3>
+    <p>Some Advice</p>
+  </li>
+  <li id="branch-3-1-1-1">
+    <h3>Proposed Next Steps:</h3>
+    <p>Some advice</p>
+  </li>
+  <li id="branch-3-1-2-2">
+    <h3>Proposed Next Steps:</h3>
+    <p>Some Advice</p>
+  </li>
+  <li id="branch-3-1-2-1">
+    <h3>Proposed Next Steps:</h3>
+    <p>Some advice</p>
+  </li>
+  <li id="branch-3-2-1-2">
+    <h3>Proposed Next Steps:</h3>
+    <p>https://support.marinsoftware.com/en-us/Marin_Search/Google/How_To_Articles%3A_Google/Google's_Upgraded_URLs</p>
+  </li>
+  <li id="branch-3-2-1-1">
+    <h3>Proposed Next Steps:</h3>
+    <p>https://support.marinsoftware.com/en-us/Marin_Search/Google/How_To_Articles%3A_Google/Google's_Upgraded_URLs</p>
+  </li>
+  <li id="branch-3-2-2-2">
+    <h3>Proposed Next Steps:</h3>
+    <p>https://support.marinsoftware.com/en-us/Marin_Search/Google/How_To_Articles%3A_Google/Google's_Upgraded_URLs</p>
+  </li>
+  <li id="branch-3-2-2-1">
+    <h3>Proposed Next Steps:</h3>
+    <p>https://support.marinsoftware.com/en-us/Marin_Search/Google/How_To_Articles%3A_Google/Google's_Upgraded_URLs</p>
+  </li>
+  
+</ul>
+
+<p><a href="/">Back to Support Page</a></p>
+<p><a href="http://labs-lv-2.prod.marinsw.net:3000/qa/tracker/">QA Tracker Tool</a></p>
+<p><a href="http://opsportal.marinsw.net">Ops Portal</a></p>
+
+
+<a id="tree-reset"></a>
+
+<script type="text/javascript" src="static/decisionTree.js"></script>
+</body>
+</html>
