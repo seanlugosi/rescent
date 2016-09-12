@@ -16,9 +16,9 @@ def initdb(CID):
 		hoststr=str(host)
 
 	connection = pymysql.connect(host='dbp'+hoststr,
-	                             user='vpalussiere',
-	                             passwd='Cavy2Batty$',
-	                             db='marin',
+	                             user='TEST',
+	                             passwd='TEST',
+	                             db='TEST',
 	                             charset='utf8mb4',
 	                             cursorclass=pymysql.cursors.DictCursor)
 
@@ -39,9 +39,9 @@ def initdb_staging(CID):
 		hoststr=str(host)
 	print hoststr
 	connection = pymysql.connect(host='dbp'+hoststr,
-	                             user='vpalussiere',
-	                             passwd='Cavy2Batty$',
-	                             db='marin_olap_staging',
+	                             user='TEST',
+	                             passwd='TEST',
+	                             db='TEST',
 	                             charset='utf8mb4',
 	                             cursorclass=pymysql.cursors.DictCursor)
 	return connection
